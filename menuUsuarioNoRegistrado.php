@@ -12,6 +12,8 @@
         body {
             margin: 0;
             padding: 0;
+            overflow-x:hidden;
+            overflow-y:auto;
             background-color: #f4f4f4;
             font-family: 'Alverta', sans-serif; 
         }
@@ -149,6 +151,9 @@
         .desplegable:hover .menu-desplegable {
             display: block; 
         }
+
+        /*Evitar desplazamiento horizontal*/
+
     </style>
 </head>
 <body>

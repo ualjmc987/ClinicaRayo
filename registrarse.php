@@ -108,7 +108,7 @@ require_once 'menuUsuarioNoRegistrado.php'
                 <label for="contrasena">&nbsp;&nbsp;&nbsp;Contraseña:</label>
                 <input type="password" id="contrasena" placeholder="********" required>
 
-                <p>¿No tienes cuenta? <a href="registrarse.php">Regístrate aquí.</a></p>
+                <a href="#">¿No tienes cuenta? Regístrate aquí.</a>
 
                 <div class="botom">
                 <button type="button">Cancelar</button>
