@@ -16,7 +16,7 @@ require_once 'menuUsuarioNoRegistrado.php'
      /* Estilo para el cuadro central */
      .contenidoCuadro {
             width: 472px;
-            height: 435px;
+            height: 536px;
             background-color: #1A428A; 
             border-radius: 5px; 
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
@@ -27,7 +27,7 @@ require_once 'menuUsuarioNoRegistrado.php'
             align-items: center;
             position: relative;
             left: 500px;
-            top: 200px;
+            top: 150px;
         }
 
         /* Estilo para el formulario */
@@ -46,11 +46,14 @@ require_once 'menuUsuarioNoRegistrado.php'
             text-align: left; 
         }
 
+        .formulario input[type="nombre"],
+        .formulario input[type="apellidos"],
         .formulario input[type="email"],
-        .formulario input[type="password"] {
+        .formulario input[type="password"] ,
+        .formulario input[type="telefono"] {
             width: 90%;
             padding: 10px;
-            margin-bottom: 50px;
+            margin-bottom: 10px;
             border: none;
             border-radius: 5px;
             font-family: 'Alverta', sans-serif;
@@ -102,12 +105,25 @@ require_once 'menuUsuarioNoRegistrado.php'
     <div class="cuadroCentral">
         <div class="contenidoCuadro">
             <form class="formulario">
+
+
+                <label for="nombre">&nbsp;&nbsp;&nbsp;Nombre:</label>
+                <input type="nombre" id="nombre" placeholder="*******" required>
+
+                <label for="apellidos">&nbsp;&nbsp;&nbsp;Apellidos:</label>
+                <input type="apellidos" id="apellidos" placeholder="*******" required>
+
                 <label for="correo">&nbsp;&nbsp;&nbsp;Correo electrónico:</label>
                 <input type="email" id="correo" placeholder="ejemplo@ejemplo.es" required>
 
                 <label for="contrasena">&nbsp;&nbsp;&nbsp;Contraseña:</label>
                 <input type="password" id="contrasena" placeholder="********" required>
 
+                <label for="telefono">&nbsp;&nbsp;&nbsp;Nº Telefono:</label>
+                <input type="telefono" id="telefono" placeholder="*******" required>
+
+             
+                
                 <a href="#">¿No tienes cuenta? Regístrate aquí.</a>
 
                 <div class="botom">
@@ -122,9 +138,3 @@ require_once 'menuUsuarioNoRegistrado.php'
     </div>
 </body>
 </html>
-<br>
-<br>
-<br>
-<br>
-<?php
-require_once 'piePagina.php';

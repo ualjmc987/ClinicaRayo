@@ -7,11 +7,15 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Alverta:wght@700&display=swap" rel="stylesheet">
 
+    
     <style>
-        /* Aplicar la fuente para el texto */
+
+        /* Evitar que el desplazamiento horizontal ocurra yaplicar fuente */
         body {
             margin: 0;
             padding: 0;
+            overflow-x: hidden; 
+            overflow-y: auto;
             background-color: #f4f4f4;
             font-family: 'Alverta', sans-serif; 
         }
@@ -19,6 +23,7 @@
         /* Estilo del logo */
         .logo {
             height: 100%;
+        
         }
         
         /* Cabecera, es la parte de arriba de color azul oscuro */
@@ -174,7 +179,7 @@
         <table class="tabla_menu">
             <tbody>
                 <tr>
-                    <td><a href="sobre-nosotros.php">Sobre nosotros</a></td>
+                    <td><a href="sobreNosotros.php">Sobre nosotros</a></td>
                     <td class="desplegable">
                         <a href="#">Servicios <span class="flecha">&#9662;</span></a>
                         <ul class="menu-desplegable">
