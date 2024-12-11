@@ -166,10 +166,7 @@
         <!-- Botones -->
         <div class="botones">
             <a href="iniciarSesion.php">
-                <button class="boton">Inicio Sesión</button>
-            </a>
-            <a href="registrarse.php">
-                <button class="boton">Registrarse</button>
+                <button class="boton">Perfil</button>
             </a>
         </div>
     </div>

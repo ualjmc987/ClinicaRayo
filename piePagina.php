@@ -19,7 +19,7 @@
     min-height: 100vh;
         }
 
-        .logo {
+        .logop {
             position: relative;
             top: 70px;
             left: -30px;
@@ -36,7 +36,7 @@
             margin-top: auto;
         }
 
-        .pie-de-pagina .contenido {
+        .pie-de-pagina .contenidop {
             width: 90%;
             max-width: 1440px;
             display: flex;
@@ -121,9 +121,9 @@
     <!-- Pie de página -->
     <div class="pie-de-pagina">
         <!-- Contenido principal del pie de página -->
-        <div class="contenido">
+        <div class="contenidop">
             <div class="columna">
-                <img src="LogoBlanco.png" alt="Logo de la Clínica" class="logo" style="height: 200px;">
+                <img src="LogoBlanco.png" alt="Logo de la Clínica" class="logop" style="height: 200px;">
             </div>
             <div class="columna">
                 <br>
@@ -169,7 +169,7 @@
                         <img src="Face.png" alt="Facebook"> Clinica Rayo
                     </a>
                     <a href="https://wa.me/644248375" target="_blank">
-                        <img src=".png" alt="WhatsApp"> 644248375
+                        <img src="wasap.png" alt="WhatsApp"> 644248375
                     </a>
                 </div> 
             </div>

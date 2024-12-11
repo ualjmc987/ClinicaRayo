@@ -15,8 +15,8 @@ require_once 'menuUsuarioNoRegistrado.php'
 
      /* Estilo para el cuadro central */
      .contenidoCuadro {
-            width: 492px;
-            height: 435px;
+            width: 472px;
+            height: 536px;
             background-color: #1A428A; 
             border-radius: 5px; 
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
@@ -46,11 +46,14 @@ require_once 'menuUsuarioNoRegistrado.php'
             text-align: left; 
         }
 
+        .formulario input[type="nombre"],
+        .formulario input[type="apellidos"],
         .formulario input[type="email"],
-        .formulario input[type="password"] {
+        .formulario input[type="password"] ,
+        .formulario input[type="telefono"] {
             width: 90%;
             padding: 10px;
-            margin-bottom: 50px;
+            margin-bottom: 10px;
             border: none;
             border-radius: 5px;
             font-family: 'Alverta', sans-serif;
@@ -101,20 +104,32 @@ require_once 'menuUsuarioNoRegistrado.php'
     <!-- CuadroCentral -->
     <div class="cuadroCentral">
         <div class="contenidoCuadro">
-    <form class="formulario" method="POST" action="validarInicioSesion.php">
-    <label for="correo">&nbsp;&nbsp;&nbsp;Correo electrónico:</label>
-    <input type="email" id="correo" name="correo" placeholder="ejemplo@ejemplo.es" required>
+            <form class="formulario">
 
-    <label for="contrasena">&nbsp;&nbsp;&nbsp;Contraseña:</label>
-    <input type="password" id="contrasena" name="contrasena" placeholder="********" required>
 
-    <a href="#">¿No tienes cuenta? Regístrate aquí.</a>
+                <label for="nombre">&nbsp;&nbsp;&nbsp;Nombre:</label>
+                <input type="nombre" id="nombre" placeholder="*******" required>
 
-    <div class="botom">
-        <button type="button">Cancelar</button>
-        <button type="submit">Confirmar</button>
-    </div>
-</form>
+                <label for="apellidos">&nbsp;&nbsp;&nbsp;Apellidos:</label>
+                <input type="apellidos" id="apellidos" placeholder="*******" required>
+
+                <label for="correo">&nbsp;&nbsp;&nbsp;Correo electrónico:</label>
+                <input type="email" id="correo" placeholder="ejemplo@ejemplo.es" required>
+
+                <label for="contrasena">&nbsp;&nbsp;&nbsp;Contraseña:</label>
+                <input type="password" id="contrasena" placeholder="********" required>
+
+                <label for="telefono">&nbsp;&nbsp;&nbsp;Nº Telefono:</label>
+                <input type="telefono" id="telefono" placeholder="*******" required>
+
+                <div class="botom">
+                <button type="button">Cancelar</button>
+                <button type="submit">Confirmar</button>
+                
+            </div>
+
+                </div>
+            </form>
         </div>
     </div>
 </body>
@@ -130,8 +145,5 @@ require_once 'menuUsuarioNoRegistrado.php'
 <br>
 <br>
 <br>
-<br>
-
 <?php
 require_once 'piePagina.php';
-// Recibir los datos del formulario
