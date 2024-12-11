@@ -1,5 +1,5 @@
 <?php
-require_once 'menuUsuarioNoRegistrado.php'
+require_once 'menuUsuarioNoRegistrado.php';
 ?>
 
 <!DOCTYPE html>
