@@ -27,7 +27,7 @@ require_once 'menuUsuarioNoRegistrado.php'
             align-items: center;
             position: relative;
             left: 500px;
-            top: 150px;
+            top: 100px;
         }
 
         /* Estilo para el formulario */
@@ -122,10 +122,6 @@ require_once 'menuUsuarioNoRegistrado.php'
                 <label for="telefono">&nbsp;&nbsp;&nbsp;Nº Telefono:</label>
                 <input type="telefono" id="telefono" placeholder="*******" required>
 
-             
-                
-                <a href="#">¿No tienes cuenta? Regístrate aquí.</a>
-
                 <div class="botom">
                 <button type="button">Cancelar</button>
                 <button type="submit">Confirmar</button>
@@ -138,3 +134,16 @@ require_once 'menuUsuarioNoRegistrado.php'
     </div>
 </body>
 </html>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<?php
+require_once 'piePagina.php';

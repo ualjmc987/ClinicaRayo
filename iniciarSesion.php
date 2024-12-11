@@ -15,7 +15,7 @@ require_once 'menuUsuarioNoRegistrado.php'
 
      /* Estilo para el cuadro central */
      .contenidoCuadro {
-            width: 472px;
+            width: 492px;
             height: 435px;
             background-color: #1A428A; 
             border-radius: 5px; 
@@ -27,7 +27,7 @@ require_once 'menuUsuarioNoRegistrado.php'
             align-items: center;
             position: relative;
             left: 500px;
-            top: 200px;
+            top: 100px;
         }
 
         /* Estilo para el formulario */
@@ -101,23 +101,20 @@ require_once 'menuUsuarioNoRegistrado.php'
     <!-- CuadroCentral -->
     <div class="cuadroCentral">
         <div class="contenidoCuadro">
-            <form class="formulario">
-                <label for="correo">&nbsp;&nbsp;&nbsp;Correo electrónico:</label>
-                <input type="email" id="correo" placeholder="ejemplo@ejemplo.es" required>
+    <form class="formulario" method="POST" action="validarInicioSesion.php">
+    <label for="correo">&nbsp;&nbsp;&nbsp;Correo electrónico:</label>
+    <input type="email" id="correo" name="correo" placeholder="ejemplo@ejemplo.es" required>
 
-                <label for="contrasena">&nbsp;&nbsp;&nbsp;Contraseña:</label>
-                <input type="password" id="contrasena" placeholder="********" required>
+    <label for="contrasena">&nbsp;&nbsp;&nbsp;Contraseña:</label>
+    <input type="password" id="contrasena" name="contrasena" placeholder="********" required>
 
-                <a href="#">¿No tienes cuenta? Regístrate aquí.</a>
+    <a href="#">¿No tienes cuenta? Regístrate aquí.</a>
 
-                <div class="botom">
-                <button type="button">Cancelar</button>
-                <button type="submit">Confirmar</button>
-                
-            </div>
-
-                </div>
-            </form>
+    <div class="botom">
+        <button type="button">Cancelar</button>
+        <button type="submit">Confirmar</button>
+    </div>
+</form>
         </div>
     </div>
 </body>
@@ -126,5 +123,15 @@ require_once 'menuUsuarioNoRegistrado.php'
 <br>
 <br>
 <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 <?php
 require_once 'piePagina.php';
+// Recibir los datos del formulario
