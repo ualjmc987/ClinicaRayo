@@ -308,5 +308,3 @@
     </div>
 </body>
 </html>
-<?php
-require_once 'piePagina.php';
