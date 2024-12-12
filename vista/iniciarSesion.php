@@ -1,6 +1,3 @@
-<?php
-require_once 'menuUsuarioNoRegistrado.php'
-?>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -131,7 +128,3 @@ require_once 'menuUsuarioNoRegistrado.php'
 <br>
 <br>
 <br>
-
-<?php
-require_once 'piePagina.php';
-// Recibir los datos del formulario

@@ -130,8 +130,6 @@
 
 </head>
 <body>
-    <!-- Incluir el menú -->
-    <?php require_once 'menuUsuarioNoRegistrado.php'; ?>
 
     <!-- Contenido del primer trabajador -->
     <div class="contenido">

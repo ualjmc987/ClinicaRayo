@@ -69,8 +69,6 @@
     </style>
 </head>
 <body>
-    <!-- Incluye el menú superior -->
-    <?php require_once 'menuAdmin.php'; ?>
 
     <br>
     <br>

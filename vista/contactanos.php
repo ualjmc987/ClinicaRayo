@@ -1,6 +1,3 @@
-<?php
-require_once 'menuUsuarioNoRegistrado.php';
-?>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -80,6 +77,3 @@ require_once 'menuUsuarioNoRegistrado.php';
 </div>
 </body>
 </html>
-
-<?php
-require_once 'piePagina.php';
