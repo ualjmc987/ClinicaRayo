@@ -135,7 +135,7 @@
     <div class="contenido">
         <div class="titulo">Sobre Dr. Rafael Rayo - Podólogo Colegiado N.º 0021</div>
         <div class="detalle">
-            <img src="DrRafaelRayo.png" alt="Dr. Rafael Rayo">
+            <img src="../controlador/images/DrRafaelRayo.png" alt="Dr. Rafael Rayo">
             <div class="texto">
             <p>
         El Dr. Rafael Rayo, fundador y director de nuestra clínica, cuenta con más de 30 años de experiencia en podología, 
@@ -175,7 +175,7 @@
     <div class="contenido">
         <div class="titulo">Dra. Ana María Rayo - Podóloga Colegiada N.º 1937</div>
         <div class="detalle detalle-invertido">
-            <img src="AnaMariaRayo.png" alt="Dra. Ana María Rayo">
+            <img src="../controlador/images/AnaMariaRayo.png" alt="Dra. Ana María Rayo">
             <div class="texto">
             <p>
                 Es una profesional altamente cualificada, comprometida con el cuidado y la salud integral del pie. Con un máster en Cirugía
@@ -209,7 +209,7 @@
     <div class="contenido">
         <div class="titulo alineado">Alberto Rayo - Podólogo Colegiado N.º 2279</div>
         <div class="detalle">
-            <img src="AlbertoRayo.png" alt="Alberto Rayo">
+            <img src="../controlador/images/AlbertoRayo.png" alt="Alberto Rayo">
             <div class="texto">
             <p>
     Es un podólogo especializado en cirugía de antepié, con formación en la Universidad de Málaga, y es miembro activo tanto de la 
@@ -238,7 +238,7 @@
     <div class="contenido">
         <div class="titulo alineado">&nbsp;&nbsp;&nbsp;&nbsp;Rafael Rayo Jr. - Podólogo Colegiado N.º 2442</div>
         <div class="detalle detalle-invertido">
-            <img src="RafaelRayo.png" alt="Rafael Rayo Jr.">
+            <img src="../controlador/images/RafaelRayo.png" alt="Rafael Rayo Jr.">
             <div class="texto">
             <p>
                 Es un podólogo altamente capacitado, con un máster en Nuevas Tendencias Asistenciales y de Investigación en Ciencias 
@@ -266,7 +266,7 @@
             Esterilización</div>
         <br>
         <div class="detalle">
-            <img src="RocioRayo.png" alt="Rocio Rayo.">
+            <img src="../controlador/images/RocioRayo.png" alt="Rocio Rayo.">
             <div class="texto">
             <p>
             Es una pieza fundamental de nuestro equipo, encargándose de coordinar la agenda de citas con los profesionales y de 
@@ -293,7 +293,7 @@
          <div class="contenido">
         <div class="tituloultimo">Sobre nuestra clínica:</div>
         <div class="detalle detalle-invertido">
-            <img src="Rayo.png" alt="Rayo" class="ultimaimagen">
+            <img src="../controlador/images/Rayo.png" alt="Rayo" class="ultimaimagen">
             <div class="texto">
             <p>
             Clínica rayo es un centro integral especializado exclusivamente en la Prevención, Diagnóstico y 
