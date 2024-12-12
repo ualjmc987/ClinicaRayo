@@ -88,7 +88,7 @@
     <div class="cabecera">
         <!-- Logo -->
         <a href="inicioAdmin.php">
-            <img src="LogoBlanco.png" alt="Logo de la Clínica" class="logo">
+            <img src="../controlador/images/LogoBlanco.png" alt="Logo de la Clínica" class="logo">
         </a>
 
         <!-- Contenedor central -->

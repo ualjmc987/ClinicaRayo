@@ -123,7 +123,7 @@
         <!-- Contenido principal del pie de página -->
         <div class="contenidop">
             <div class="columna">
-                <img src="LogoBlanco.png" alt="Logo de la Clínica" class="logop" style="height: 200px;">
+                <img src="../controlador/images/LogoBlanco.png" alt="Logo de la Clínica" class="logop" style="height: 200px;">
             </div>
             <div class="columna">
                 <br>
