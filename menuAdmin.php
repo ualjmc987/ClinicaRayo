@@ -87,7 +87,7 @@
     <!-- Cabecera -->
     <div class="cabecera">
         <!-- Logo -->
-        <a href="inicioUsuarioNoRegistrado.php">
+        <a href="inicioAdmin.php">
             <img src="LogoBlanco.png" alt="Logo de la Clínica" class="logo">
         </a>
 
