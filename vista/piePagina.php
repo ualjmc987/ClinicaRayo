@@ -163,13 +163,13 @@
                 <br>
                 <div class="social">
                     <a href="https://www.instagram.com/clinicarayo" target="_blank">
-                        <img src="Insta.png" alt="Instagram"> clinicarayo
+                        <img src="../controlador/images/Insta.png" alt="Instagram"> clinicarayo
                     </a>
                     <a href="https://www.facebook.com/clinicarayo" target="_blank">
-                        <img src="Face.png" alt="Facebook"> Clinica Rayo
+                        <img src="../controlador/images/Face.png" alt="Facebook"> Clinica Rayo
                     </a>
                     <a href="https://wa.me/644248375" target="_blank">
-                        <img src="wasap.png" alt="WhatsApp"> 644248375
+                        <img src="../controlador/images/wasap.png" alt="WhatsApp"> 644248375
                     </a>
                 </div> 
             </div>
