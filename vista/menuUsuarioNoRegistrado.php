@@ -7,10 +7,8 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Alverta:wght@700&display=swap" rel="stylesheet">
 
-    
     <style>
-
-        /* Evitar que el desplazamiento horizontal ocurra yaplicar fuente */
+        /* Evitar desplazamiento horizontal y aplicar fuente */
         body {
             margin: 0;
             padding: 0;
@@ -20,29 +18,27 @@
             font-family: 'Alverta', sans-serif; 
         }
 
-        /* Estilo del logo */
-        .logo {
-            height: 100%;
-        
-        }
-        
-        /* Cabecera, es la parte de arriba de color azul oscuro */
+        /* Cabecera */
         .cabecera {
             display: flex;
+            flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
             align-items: center;
+            justify-content: space-between;
             width: 100%;
-            height: 144px;
             background-color: #1A428A; 
-            padding: 0 20px; 
             color: white; 
+            padding: 10px 20px;
         }
 
-        /* Estilo de los botones (Inicio sesión, Registrarse) */
+        /* Logo */
+        .logo {
+            height: 60px;
+        }
+
+        /* Botones de inicio de sesión y registro */
         .botones {
             display: flex;
-            gap: 40px; 
-            margin-top: -30px; 
-            margin-left: 970px; 
+            gap: 10px;
         }
 
         .boton {
@@ -64,101 +60,117 @@
             transform: translateY(-3px); 
         }
 
-        /* TABLA DEL MENU PRINCIPAL */
-        .contenedor-tabla {
-            position: absolute; 
-            top: 127px; 
-            left: 1605px; 
-            transform: translate(-50%, -50%); 
-            width: 100%; 
-            text-align: center;
-            z-index: 10; 
+        /* Menú principal */
+        .menu-principal {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap; /* Permite que el menú se ajuste en pantallas pequeñas */
         }
 
-        /* Estilo de la tabla en general */
-        .tabla_menu {
-            width: auto; 
-            border-collapse: collapse;
-            color: #fff; 
-            background-color: transparent; 
+        .menu-principal ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 15px;
         }
 
-        /* Borde rodeando todo blanco y transparente */
-        .tabla_menu tr {
-            border: 1px solid white; 
-            background-color: transparent;
+        .menu-principal li {
+            position: relative; 
         }
 
-        /* Separación de celdas */
-        .tabla_menu td {
-            padding: 8px 15px; 
-            border-right: 1px solid white; 
-            font-size: 16px; 
-            font-weight: bold; 
-        }
-
-        /* Estilo para los enlaces de las celdas */
-        .tabla_menu td a {
+        .menu-principal a {
             color: white; 
             text-decoration: none; 
             font-size: 16px; 
-            font-weight: bold;
+            font-weight: bold; 
+            padding: 8px 15px; 
+            display: block; 
         }
 
-        /* Cambiar color al pasar el ratón a blanco un poco mas claro  */
-        .tabla_menu td a:hover {
+        .menu-principal a:hover {
             color: #ddd; 
         }
 
-        /* DESPLEGABLE EN SERVICIOS */
+        /* Menú desplegable */
         .menu-desplegable {
             list-style: none; 
             margin: 0;
             padding: 0;
-            display: none; 
+            display: none; /* Oculto inicialmente */
             position: absolute; 
             background-color: #1A428A; 
             border: 1px solid #fff; 
             top: 100%; 
-            left: 150px;
-            min-width: 250px; 
+            left: 0;
+            min-width: 200px; 
             z-index: 1000; 
         }
 
-        /* Línea en el desplegable */
         .menu-desplegable li {
             padding: 10px; 
             border-bottom: 1px solid white; 
-            text-align: left; 
         }
 
-        /* Quitar la línea en el último elemento */
         .menu-desplegable li:last-child {
             border-bottom: none;
         }
 
-        /* Estilo del menú desplegable */
-        .menu-desplegable li a {
-            color: white; 
-            text-decoration: none; 
+        .menu-desplegable a {
             display: block; 
-            font-size: 16px;
         }
 
-        /* Cambiar el color al pasar el ratón */
-        .menu-desplegable li a:hover {
+        .menu-desplegable a:hover {
             background-color: #133b7f; 
         }
 
-        /* Mostrar el menú al pasar el ratón */
-        .desplegable:hover .menu-desplegable {
+        /* Mostrar menú al pasar el ratón */
+        .menu-principal li:hover .menu-desplegable {
             display: block; 
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 768px) {
+            .cabecera {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .menu-principal {
+                flex-direction: column;
+                gap: 10px;
+                width: 100%;
+            }
+
+            .menu-principal ul {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .menu-desplegable {
+                position: static;
+                border: none;
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .boton {
+                font-size: 14px;
+                width: 100px;
+                height: 35px;
+            }
+
+            .menu-principal a {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
 <body>
     <!-- Cabecera -->
     <div class="cabecera">
+        <!-- Logo -->
         <a href="inicioUsuarioNoRegistrado.php">
             <img src="../controlador/images/LogoBlanco.png" alt="Logo de la Clínica" class="logo">
         </a>
@@ -172,33 +184,29 @@
                 <button class="boton">Registrarse</button>
             </a>
         </div>
-    </div>
 
-    <!-- Menú principal -->
-    <div class="contenedor-tabla">
-        <table class="tabla_menu">
-            <tbody>
-                <tr>
-                    <td><a href="sobreNosotros.php">Sobre nosotros</a></td>
-                    <td class="desplegable">
-                        <a href="#">Servicios <span class="flecha">&#9662;</span></a>
-                        <ul class="menu-desplegable">
-                            <li><a href="podologiaGeneral.php">Podología General</a></li>
-                            <li><a href="podologiaAvanzada.php">Podología Avanzada</a></li>
-                            <li><a href="podologiaInfantil.php">Podología Infantil</a></li>
-                            <li><a href="eco-intervencionismo.php">Eco-intervencionismo</a></li>
-                            <li><a href="tratamientosFisicos.php">Tratamientos Físicos</a></li>
-                            <li><a href="cirugiaAbierta.php">Cirugía Abierta</a></li>
-                            <li><a href="cirugiaCerrada.php">Cirugía Cerrada</a></li>
-                        </ul>
-                    </td>
-                    <td><a href="tienda.php">Tienda</a></td>
-                    <td><a href="reservarCita.php">Reservar cita</a></td>
-                    <td><a href="blog.php">Blog</a></td>
-                    <td><a href="contactanos.php">Contáctanos</a></td>
-                </tr>
-            </tbody>
-        </table>
+        <!-- Menú principal -->
+        <nav class="menu-principal">
+            <ul>
+                <li><a href="sobreNosotros.php">Sobre nosotros</a></li>
+                <li>
+                    <a href="#">Servicios <span class="flecha">&#9662;</span></a>
+                    <ul class="menu-desplegable">
+                        <li><a href="podologiaGeneral.php">Podología General</a></li>
+                        <li><a href="podologiaAvanzada.php">Podología Avanzada</a></li>
+                        <li><a href="podologiaInfantil.php">Podología Infantil</a></li>
+                        <li><a href="eco-intervencionismo.php">Eco-intervencionismo</a></li>
+                        <li><a href="tratamientosFisicos.php">Tratamientos Físicos</a></li>
+                        <li><a href="cirugiaAbierta.php">Cirugía Abierta</a></li>
+                        <li><a href="cirugiaCerrada.php">Cirugía Cerrada</a></li>
+                    </ul>
+                </li>
+                <li><a href="tienda.php">Tienda</a></li>
+                <li><a href="reservarCita.php">Reservar cita</a></li>
+                <li><a href="blog.php">Blog</a></li>
+                <li><a href="contactanos.php">Contáctanos</a></li>
+            </ul>
+        </nav>
     </div>
 </body>
 </html>
