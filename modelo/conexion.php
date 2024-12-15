@@ -1,16 +1,15 @@
 <?php
-$server = "localhost";
-$user = "root";
-$pass = "javisan2711_";
-$db = "ClinicaRayo";
+$host = 'db5016829413.hosting-data.io'; // Sustituye con el host que aparece en tu panel, si es diferente.
+$dbname = 'dbs13594088';        // Nombre de la base de datos.
+$username = 'dbu3773451';      // Usuario (mismo que el nombre de la base de datos).
+$password = 'dominio@clinicarayo.es';    // Contraseña asignada a tu usuario en IONOS.
 
-// Crear conexión
-$conexion = new mysqli($server, $user, $pass, $db);
-
-// Verificar conexión
-if ($conexion->connect_error) {
-    die("Conexión fallida: " . $conexion->connect_error);
-} else {
-    echo "Conectado";
+try {
+    $conn = new mysqli($host, $username, $password, $dbname);
+    if ($conn->connect_error) {
+        die("Error de conexión: " . $conn->connect_error);
+    }
+} catch (Exception $e) {
+    die("Error en la conexión: " . $e->getMessage());
 }
 ?>
