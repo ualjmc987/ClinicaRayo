@@ -50,21 +50,46 @@ if (!$contenido) {
                     font-weight: 900;
                     color: #000;
                     position: relative;
-                    text-align: center;
+                    text-align: left;
                     margin: 20px 0;
-                    left: -230px;
-
-
+                    left: 230px;
                 }
+                  .detalle {
+                       display: flex;
+                       flex-direction: row;
+                       align-items: flex-start;
+                       gap: 50px;
+                       width: 100%;
+        }
+
+   /*Para invertir las imagenes y el texto */
+
+        .detalle-invertido {
+            flex-direction: row-reverse;
+        }
+
+ /* Para Centrar imagenes*/
+
+        .detalle img {
+            width: 300px;
+            height: auto;
+            object-fit: cover;
+            margin: 0;
+            align-self: flex-start;
+            position: relative;
+            left: -90px;
+            top: 40px;
+
+        }
             </style>
 
 </head>
 <body>
+    <!-- Incluir el menú -->
+    <?php require_once 'menuUsuarioNoRegistrado.php'; ?>
     <main>
         <section class="eco-intervencionismo">
           <div class="titulo"><?php echo htmlspecialchars($contenido['nombre']); ?></div>
-              <div class="titulo">Sobre Dr. Rafael Rayo - Podólogo Colegiado N.º 0021</div>
-            <h2><?php echo htmlspecialchars($contenido['nombre']); ?></h2>
             <p class="descripcion"><?php echo nl2br(htmlspecialchars($contenido['descripcion'])); ?></p>
             <img class="imagen-servicio" src="<?php echo htmlspecialchars($contenido['imagen_url']); ?>" alt="Eco-Intervencionismo">
 

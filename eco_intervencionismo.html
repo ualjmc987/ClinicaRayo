@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eco-Intervencionismo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Incluir el menú -->
+
+  <div class="container">
+    <!-- Header Section -->
+    <div class="header">
+      <h1>Eco-Intervencionismo</h1>
+      <p>En nuestra clínica, nos enorgullece ofrecer el servicio de Ecografía Intervencionista, una avanzada tecnología médica que utiliza ondas de sonido para generar imágenes en tiempo real, guiando el tratamiento de diversas enfermedades y lesiones en el pie.</p>
+    </div>
+
+    <!-- Image Section -->
+    <div class="image-container">
+      <img src="eco-intervencionismo.png" alt="Eco-intervencionismo en acción">
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="faq">
+      <h2>Más Información sobre el Eco-Intervencionismo</h2>
+
+      <div class="faq-item">
+        <button onclick="toggleAnswer(this)">¿Cuáles son los beneficios del eco-intervencionismo?</button>
+        <p>Esta técnica proporciona imágenes en tiempo real, lo que permite tomar decisiones precisas durante el tratamiento y reduce la necesidad de intervenciones más invasivas.</p>
+      </div>
+
+      <div class="faq-item">
+        <button onclick="toggleAnswer(this)">¿Qué patologías se pueden tratar con eco-intervencionismo?</button>
+        <p>Desde lesiones deportivas hasta problemas crónicos, el eco-intervencionismo ayuda en el diagnóstico y tratamiento de múltiples afecciones.</p>
+      </div>
+
+      <div class="faq-item">
+        <button onclick="toggleAnswer(this)">¿Cómo se realiza el procedimiento?</button>
+        <p>El procedimiento se realiza mediante una ecografía guiada que permite máxima precisión y seguridad, minimizando molestias para el paciente.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleAnswer(button) {
+      const answer = button.nextElementSibling;
+      const isActive = button.classList.contains('active');
+
+      // Close all other answers
+      document.querySelectorAll('.faq-item button').forEach(btn => {
+        btn.classList.remove('active');
+        btn.nextElementSibling.style.display = 'none';
+      });
+
+      // Toggle the clicked answer
+      if (!isActive) {
+        button.classList.add('active');
+        answer.style.display = 'block';
+      }
+    }
+  </script>
+</body>
+</html>
