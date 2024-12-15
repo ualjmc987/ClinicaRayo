@@ -1,5 +1,5 @@
 <?php
-require_once '../vista/menuUsuarioNoRegistrado.php';
-require_once '../vista/sobreNosotros.php';
-require_once '../vista/piePagina.php';
+require_once '../vista/menuUsuarioNoRegistrado.html';
+require_once '../vista/sobreNosotros.html';
+require_once '../vista/piePagina.html';
 ?>

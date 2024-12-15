@@ -1,4 +1,4 @@
 <?php
-require_once '../vista/menuUsuarioRegistrado.php';
-require_once '../vista/piePagina.php';
+require_once '../vista/menuUsuarioRegistrado.html';
+require_once '../vista/piePagina.html';
 ?>
